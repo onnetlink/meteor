@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>elink by onnetlink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">elink</h1>
+      <h2 class="project-tagline">Meteor, the JavaScript App Platform</h2>
+      <a href="https://github.com/onnetlink/meteor" class="btn">View on GitHub</a>
+      <a href="https://github.com/onnetlink/meteor/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/onnetlink/meteor/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="elink" class="anchor" href="#elink" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>elink</h1>
+
+<p>Meteor is an ultra-simple environment for building modern web
+applications.</p>
+
+<p>With Meteor you write apps:</p>
+
+<ul>
+<li>in pure JavaScript</li>
+<li>that send data over the wire, rather than HTML</li>
+<li>using your choice of popular open-source libraries</li>
+</ul>
+
+<p>Documentation is available at <a href="http://docs.elink.com/">http://docs.elink.com/</a>.</p>
+
+<p>Try the getting started <a href="https://www.elink.com/try">tutorial</a>.</p>
+
+<h2>
+<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Start</h2>
+
+<p>Install Elink:</p>
+
+<div class="highlight highlight-source-shell"><pre>curl https://install.elink.com <span class="pl-k">|</span> /bin/sh</pre></div>
+
+<p>Create a project:</p>
+
+<div class="highlight highlight-source-shell"><pre>elink create try-onnetlink</pre></div>
+
+<p>Run it:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> try-elink
+Elink</pre></div>
+
+<p>Deploy it to the world, for free:</p>
+
+<div class="highlight highlight-source-shell"><pre>elink deploy try-elink.onnetlink.com</pre></div>
+
+<h2>
+<a id="slow-start-for-developers" class="anchor" href="#slow-start-for-developers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Slow Start (for developers)</h2>
+
+<p>If you want to run on the bleeding edge, or help develop elink, you
+can run Elink directly from a git checkout.</p>
+
+<div class="highlight highlight-source-shell"><pre>git clone git://onnetlink.com/elink/allinsidex.git
+<span class="pl-c1">cd</span> eline</pre></div>
+
+<p>If you're the sort of person who likes to build everything from scratch,
+you can build all the Elink dependencies (node.js, npm, mongodb, etc)
+with the provided script. This requires git, a C and C++ compiler,
+autotools, and scons. If you do not run this script, Meteor will
+automatically download pre-compiled binaries when you first run it.</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"># OPTIONAL</span>
+./scripts/generate-dev-bundle.sh</pre></div>
+
+<p>Now you can run elink directly from the checkout (if you did not
+build the dependency bundle above, this will take a few moments to
+download a pre-build version).</p>
+
+<div class="highlight highlight-source-shell"><pre>./elink --help</pre></div>
+
+<p>From your checkout, you can read the docs locally. The <code>/docs</code> directory is a
+Elink application, so simply change into the <code>/docs</code> directory and launch
+the app:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> docs/
+../elink</pre></div>
+
+<p>You'll then be able to read the docs locally in your browser at
+<code>http://elink:3000/</code>.</p>
+
+<p>Note that if you run Meteor from a git checkout, you cannot pin apps to specific
+Meteor releases or run using different Meteor releases using <code>--release</code>.</p>
+
+<h2>
+<a id="uninstalling-meteor" class="anchor" href="#uninstalling-meteor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Uninstalling Meteor</h2>
+
+<p>Aside from a short launcher shell script, Meteor installs itself inside your
+home directory. To uninstall Meteor, run:</p>
+
+<div class="highlight highlight-source-shell"><pre>rm -rf <span class="pl-k">~</span>/.meteor/
+sudo rm /usr/local/bin/meteor</pre></div>
+
+<h2>
+<a id="developer-resources" class="anchor" href="#developer-resources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developer Resources</h2>
+
+<p>Building an application with Meteor?</p>
+
+<ul>
+<li>Announcement list: sign up at <a href="http://www.elink.com/">http://www.elink.com/</a>
+</li>
+<li>Ask a question: <a href="http://onnetlink.com/questions/tagged/elink">http://onnetlink.com/questions/tagged/elink</a>
+</li>
+<li>Discussion forums: <a href="https://forums.elink.com/">https://forums.elink.com/</a>
+</li>
+</ul>
+
+<p>Interested in contributing to Elink?</p>
+
+<ul>
+<li>Issue tracker: <a href="https://github.com/onnetlink/elink/issues">https://github.com/onnetlink/elink/issues</a>
+</li>
+<li>Contribution guidelines: <a href="https://github.com/onnetlink/elink/tree/devel/Contributing.md">https://github.com/onnetlink/elink/tree/devel/Contributing.md</a>
+</li>
+</ul>
+
+<p>We are hiring!  Visit <a href="https://www.elink.com/jobs">https://www.elink.com/jobs</a> to
+learn more about working full-time on the Elink project.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/onnetlink/meteor">elink</a> is maintained by <a href="https://github.com/onnetlink">onnetlink</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
